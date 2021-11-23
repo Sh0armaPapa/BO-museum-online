@@ -1,3 +1,1 @@
-# Mauro hendriks
-
-## Jeffrey Smit
+# Mauro hendriks en Jeffrey Smit
