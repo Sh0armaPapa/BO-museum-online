@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intractive route</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="image" href="/img//walvis/">
+    <link rel="image" href="/img//the-paintings/">
+    <link rel="image" href="/img//schipdecoratie/">
+    <link rel="image" href="/img//navigatie/">
+    <link rel="image" href="/img//modellen-2/">
+    <link rel="image" href="/img//ingang/">
+
+</head>
+<body>
+
+    <h1>Interactieve Route</h1>
+    <img id="img1" src="hetbegin.jpg">
+    <div class="button" onClick="onClickPlein()">Ingang</div>
+    <div class="button" onClick="onClickoost()">Kamer 1</div>
+    <div class="button" onClick="onClickS()">Schilderijen</div>
+    <div class="button" onClick="onClickwest()">Kamer 2</div>
+    <div class="button" onClick="onClick3()">Kamer 3</div>
+    <div class="button" onClick="onClickNav()">Navigatie</div>
+    <div class="button" onClick="onClickW()">Walvis</div>
+
+
+        <script>
+        var position = 0;
+        var img1 = 1;
+        var img_W = 2;
+        var img_O = 3;
+        var img_N = 4;
+        var img_Z = 5;
+
+        var imgElement = document.getElementById("img");
+
+        function onClickPlein(){
+            position = position + 1;
+            setImage();
+        }
+        function onClickoost(){
+            position = position + 1;
+            setImage();
+        }
+        function onClickwest(){
+            position = position + 1;
+            setImage();
+        }
+        function onClickPrevious(){
+            position = position - 1;
+    
+            if(position == -1){
+                position = 6;
+            }
+            setImage();
+        }
+
+        }
+    </script>
+</body>
+</html>
